@@ -14,9 +14,9 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
-html,body{
+/* html,body{
     scroll-behavior: smooth;
-}
+} */
 h1,
 h2,
 h3,
@@ -863,7 +863,7 @@ box-shadow: inset 0px 0px 10px 0px rgba(226,62,56,0.75);
     font-weight: 500;
     color: #fff;
     font-size: 16px;
-    letter-spacing: .5px;
+
 }
 #counter-part .overlay .delta{
     margin-left: 80px;
