@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".menu">
   <!-- ==========================================
                   Navbar part start
     ========================================== -->
@@ -38,28 +38,62 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#banner-part">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link kim active" href="#banner-part">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-part">About us</a>
+            <a class="nav-link kim" href="#about-part">About us</a>
+            <ul>
+              <li><a href="#">Grapics design</a></li>
+              <li><a href="#">Motion grapics</a></li>
+              <li><a href="#">Web design</a>
+                <ul>
+                  <li><a href="#"> LEARN HTML</a></li>
+                  <li><a href="#"> LEARN CSS</a></li>
+                  <li><a href="#">LEARN JQUERY</a></li>
+                  <li><a href="#">BOOTSTRAP</a></li>
+                  <li><a href="#">JAVASCRIPT</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Web development</a>
+                <ul>
+                  <li><a href="#">PYTHON</a></li>
+                  <li><a href="#">JAVASCRIPT</a></li>
+                  <li><a href="#">LARAVEL</a></li>
+                  <li><a href="#">LEARN JANGO</a>
+                    <ul class="lu">
+                      <li><a href="#"> LEARN HTML</a></li>
+                      <li><a href="#"> LEARN CSS</a></li>
+                      <li><a href="#">LEARN JQUERY</a></li>
+                      <li><a href="#">BOOTSTRAP</a></li>
+                      <li><a href="#">JAVASCRIPT</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">LEARN PHP</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Digital marketing</a></li>
+            </ul>
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#gallery-part">Gallery</a>
+            <a class="nav-link kim" href="#gallery-part">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#our-team">Team</a>
+            <a class="nav-link kim" href="#our-team">Team</a>
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonial</a>
+            <a class="nav-link kim" href="#testimonial">Testimonial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#class-part">Plans</a>
+            <a class="nav-link kim" href="#membership">Membership</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer-part">Contact</a>
+            <a class="nav-link kim" href="#class-part">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link kim" href="#footer-part">Contact</a>
           </li>
         </ul>
 
@@ -126,7 +160,7 @@
   <section id="about-part">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-2 order-lg-1">
           <div class="img">
             <img src="images/about-img.png" alt="">
             <div class="overlay">
@@ -137,7 +171,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-1 order-lg-2">
           <div class="title">
             <h1>About Us</h1>
             <img src="images/about.png" alt="">
@@ -988,7 +1022,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <h4>opening hour</h4>
                 <ul>
                   <li>Monday <span>05:00 A.M. - 11:00 P.M.</span></li>
@@ -1001,7 +1035,7 @@
                   <li>holiday <span>Closed</span></li>
                 </ul>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <h4>Twetter Feed</h4>
                 <div class="twit">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -1014,7 +1048,7 @@
                    <span> 24 July 2017</span>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <h4>FLICKR PHOTOS</h4>
                 <div class="img">
                   <img src="images/fp1.jpg" alt="fp1">
@@ -1035,7 +1069,7 @@
   
   
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6 ">
                 <h4>Contact</h4>
                 <div class="add">
                   <i class="fa fa-map-marker hide" aria-hidden="true"></i>
@@ -1076,7 +1110,7 @@
 
 
 
-<div class="per"></div>
+
 
 
 

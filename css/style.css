@@ -72,23 +72,22 @@ nav .navbar-brand {
 
 
 }
-nav ul .active a {
-    color: #222222;
-    background: #fff;
+nav ul li .active {
+    color: #222222 !important;
+    background: #fff !important;
 }
-nav ul .active a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #e23e38;
-    content: "";
-    transition: .4s;
-
+nav ul li .active:after {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 3px !important;
+    background: #e23e38 !important;
+    content: "" !important;
+    transition: .4s !important;
 }
 
-nav ul li a {
+nav ul li .kim {
    
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
@@ -102,7 +101,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:after {
+nav ul li .kim:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -114,12 +113,12 @@ nav ul li a:after {
 
 }
 
-nav ul li a:hover {
+nav ul li .kim:hover {
     color: #222222;
     background: #fff;
 }
 
-nav ul li a:hover:after {
+nav ul li .kim:hover:after {
     width: 100%;
 }
 .fixed{
@@ -128,9 +127,17 @@ nav ul li a:hover:after {
     left: 0;
     padding: 0;
     background: rgba(53, 53, 53, .7);
- transition: .6s ease-in-out;
+ /* transition: .6s ease-in-out; */
+ animation:mymove .8s ease-in-out;
 }
-
+@keyframes mymove {
+    from {
+        top: -65px;
+    }
+    to {
+        top:0px;
+    }
+  }
 .fixed .navbar-brand{
     padding: 0;
     background: transparent;
@@ -151,6 +158,92 @@ nav ul li a:hover:after {
     transform:skewX(0deg)
 }
 
+/*----- dropdown 1----- */
+nav ul li {
+    position: relative;
+}
+nav ul li > ul{
+    position: absolute;
+    top: 130%;
+    left: 20px;
+    background: #000;
+    width: 200px;
+    padding: 20px 0;
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+nav ul li:hover > ul{
+    top: 105%;
+  visibility:visible;
+  opacity: 1;
+}
+nav ul li ul li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+   padding: 8px 0;
+    text-transform: uppercase;
+    background: transparent;
+    transition: .4s;
+    letter-spacing: .5px;
+   
+}
+nav ul li ul li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: .4s;
+}
+nav ul li ul li:hover a{
+    color: #000;
+}
+nav ul li ul li:hover{
+    background: #fff;
+}
+nav ul li ul li a:hover:after{
+    width: 0;
+}
+
+/*----- dropdown 2----- */
+
+nav ul li ul li > ul{
+    position: absolute;
+    /* top: 100% ; */
+    left: 102%;
+    background: #000;
+    width: 200px;
+    padding: 20px 0;
+   
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s; 
+    transform: scale(0);
+}
+nav ul li ul li:hover > ul{
+    top:0% !important;
+  visibility:visible;
+  opacity: 1;
+  transform: scale(1);
+}
+nav ul li ul li ul li a{
+  display: inline-block;
+  color: #fff  !important;
+}
+nav ul li ul li ul li:hover a {
+   color: #000 !important;
+}
+/*----- dropdown 3----- */
+
+nav ul li ul li ul li .lu li a{
+    display: inline-block;
+    color: #fff  !important;
+  }
+  nav ul li ul li ul li .lu li:hover a {
+    color: #000 !important;
+ }
+  
 /* =================================
          navbar css end
 ===================================   */
@@ -386,8 +479,8 @@ nav ul li a:hover:after {
          about css start
 ===================================   */
 #about-part {
-    margin-top: 100px;
-    margin-bottom: 100px;
+   padding-top: 80px;
+    
 
 }
 
@@ -453,7 +546,7 @@ nav ul li a:hover:after {
              gallery css start
 ===================================   */
 #gallery-part {
-    margin-top: 80px;
+    padding-top: 80px;
 
 }
 
@@ -521,7 +614,7 @@ nav ul li a:hover:after {
            our team css start
 ===================================   */
 #our-team {
-    margin-top: 100px;
+    padding-top: 100px;
     
 }
 
@@ -659,7 +752,7 @@ nav ul li a:hover:after {
            our testimonial css end
 ===================================   */
 #testimonial{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 #testimonial .testimonial{
     background: url(../images/testimonial.png) no-repeat center;
@@ -744,7 +837,7 @@ nav ul li a:hover:after {
            membership css end
 ===================================   */
 #membership{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 #membership .item{
     text-align: center;
@@ -878,7 +971,7 @@ box-shadow: inset 0px 0px 10px 0px rgba(226,62,56,0.75);
            classes css end
 ===================================   */
 #class-part{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 #class-part .colorful-tab-wrapper{
     width: 100%;
@@ -971,7 +1064,7 @@ display: inline-block;
 ==========================================  */
 
 #sponsor-part{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 #sponsor-part img{
     margin: 0 10px;
@@ -1018,8 +1111,8 @@ display: inline-block;
     color: #fff;
     font-size:30px;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
     z-index: 99;
 }
@@ -1121,7 +1214,7 @@ display: inline-block;
     font-size: 13px;
     font-weight: 400;
     color: #fff;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 #footer-part .add h1{
     font-family: 'Oswald', sans-serif;
@@ -1169,7 +1262,3 @@ display: inline-block;
 /*========================================
         footer-part css end
 ==========================================  */
-.per{
-    height: 300px;
-    width: 100%;
-}

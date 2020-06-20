@@ -11,12 +11,12 @@ $('#banner-part').slick({
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+        
         }
       },
       {
@@ -67,12 +67,12 @@ $('#banner-part').slick({
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+         
         }
       },
       {
@@ -115,12 +115,12 @@ $('#banner-part').slick({
         nextArrow:'<i class="fa fa-angle-right next" aria-hidden="true"></i>',
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 1,
               infinite: true,
-              dots: true
+             
             }
           },
           {
