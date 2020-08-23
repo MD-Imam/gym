@@ -121,14 +121,15 @@ nav ul li .kim:hover {
 nav ul li .kim:hover:after {
     width: 100%;
 }
+/* ///////////////fixed part////////////// */
 .fixed{
     position: fixed !important;
     top: 0;
     left: 0;
     padding: 0;
     background: rgba(53, 53, 53, .7);
- /* transition: .6s ease-in-out; */
- animation:mymove .8s ease-in-out;
+
+    animation:mymove .8s ease-in-out;
 }
 @keyframes mymove {
     from {
@@ -157,6 +158,7 @@ nav ul li .kim:hover:after {
     margin-top: 5px;
     transform:skewX(0deg)
 }
+/* ///////////////fixed part////////////// */
 
 /*----- dropdown 1----- */
 nav ul li {
